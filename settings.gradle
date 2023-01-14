@@ -1,0 +1,7 @@
+rootProject.name = 'cs_249'
+
+include ':coretest'
+include ':howdy'
+include ':howdyfx'
+
+include ':assign01'
