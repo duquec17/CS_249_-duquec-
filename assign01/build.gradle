@@ -21,3 +21,12 @@ application {
     mainClass = "edu.realemj.assign01.Greetings"
     mainModule = "assign01mod"
 }
+
+task runApp(type: JavaExec, dependsOn: build) {
+    classpath = sourceSets.main.runtimeClasspath
+    jvmArgs = ['--module-path', classpath.asPath]
+    mainModule = "assign01mod"
+    group "application"
+    standardInput = System.in
+}
+
