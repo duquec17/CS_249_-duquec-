@@ -28,3 +28,12 @@ application {
     mainClass = "edu.realemj.howdyfx.HowdyFX"
     mainModule = "howdyfx"
 }
+
+task runApp(type: JavaExec, dependsOn: build) {
+    classpath = sourceSets.main.runtimeClasspath
+    jvmArgs = ['--module-path', classpath.asPath]
+    mainModule = "howdyfx"
+    group "application"
+    standardInput = System.in
+}
+

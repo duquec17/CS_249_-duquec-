@@ -21,3 +21,11 @@ application {
     mainClass = "edu.realemj.howdy.HowdyPrinter"
     mainModule = "howdy"
 }
+
+task runApp(type: JavaExec, dependsOn: build) {
+    classpath = sourceSets.main.runtimeClasspath
+    jvmArgs = ['--module-path', classpath.asPath]
+    mainModule = "howdy"
+    group "application"
+    standardInput = System.in
+}
