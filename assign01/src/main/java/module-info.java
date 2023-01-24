@@ -1,3 +1,3 @@
 module assign01mod {    
-    exports edu.realemj.assign01; 
+    exports edu.squarepants.assign01;
 }
