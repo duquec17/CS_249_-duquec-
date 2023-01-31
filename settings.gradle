@@ -5,3 +5,6 @@ include ':howdy'
 include ':howdyfx'
 
 include ':assign01'
+include ':profexercises02'
+include ':profexercises03'
+
