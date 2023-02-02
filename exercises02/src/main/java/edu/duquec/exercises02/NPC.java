@@ -2,7 +2,20 @@ package edu.duquec.exercises02;
 
 public class NPC {
     private String name;
-    private int health;
+    private int health = 100;
+
+    public NPC(){
+        //Does nothing
+    }
+
+    public NPC(String n){
+        name = n;
+    }
+
+    public NPC(String n, int h){
+        name = n;
+        setHealth(h);
+    }
 
     public String getName(){
         return name;
@@ -18,5 +31,10 @@ public class NPC {
 
     public void setHealth(int h) {
         health = h;
+    }
+
+    public void takeDamage(int d){
+        int healthAfter = health - d;
+        setHealth(healthAfter);
     }
 }
