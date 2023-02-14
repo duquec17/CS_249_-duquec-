@@ -18,7 +18,7 @@ test {
 }
 
 application {
-    mainClass = "edu.realemj.assign02.CharacterCreation"
+    mainClass = "edu.duquec.assign02.CharacterCreation"
     mainModule = "assign02mod"
 }
 

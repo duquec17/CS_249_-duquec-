@@ -6,7 +6,11 @@ import java.util.Scanner;
 
 public class GeneralStore {
 
-    public void printWelcome(){}
+    public void printWelcome(){
+        System.out.println("*****************");
+        System.out.println("** WELCOME!!!! **");
+        System.out.println("*****************");
+    }
     public void printOptions(){
         System.out.println("** INVENTORY **");
         System.out.println("* Food");
@@ -17,9 +21,23 @@ public class GeneralStore {
             Scanner tokens = new Scanner(request);
             int cnt = tokens.nextInt();
             String item = tokens.next();
+            item = item.toLowerCase();
+
+            switch(item){
+                case "food" -> {
+                    s.addFood(cnt);
+                }
+                default -> {
+                    System.out.println("I'm sorry, but we don't carry: " + item);
+                }
+            }
         }
     }
-    public void printGoodbye(){}
+    public void printGoodbye(){
+        System.out.println("*******************************");
+        System.out.println("** THANK YOU; COME AGAIN!!!! **");
+        System.out.println("*******************************");
+    }
 
     public void visit(Scanner input, Supplies s){
         // Welcome

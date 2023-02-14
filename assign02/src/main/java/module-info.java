@@ -1,3 +1,3 @@
 module assign02mod {    
-    exports edu.realemj.assign02;      
+    exports edu.duquec.assign02;
 }
