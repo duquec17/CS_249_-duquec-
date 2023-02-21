@@ -5,6 +5,7 @@ public class Party {
     private Person [] party;
 
     public Party(String [] names) {
+        Arrays.sort(names);
         party = new Person[names.length];
         for(int i = 0; i < party.length; i++) {
             party[i] = new Person(names[i]);
