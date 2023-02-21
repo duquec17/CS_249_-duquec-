@@ -8,7 +8,7 @@ public class L33tSpeak {
 
         String line = "";
         do {
-            System.out.println("Enter message:");
+            System.out.println("Enter your message:");
             line = input.nextLine();
             line = line.trim();
 
