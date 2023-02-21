@@ -18,7 +18,7 @@ test {
 }
 
 application {
-    mainClass = "edu.duquec.exercises03.GeneralStore"
+    mainClass = "edu.duquec.exercises03.Party"
     mainModule = "exercises03mod"
 }
 
