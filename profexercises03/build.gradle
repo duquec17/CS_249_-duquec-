@@ -18,7 +18,7 @@ test {
 }
 
 application {
-    mainClass = "edu.realemj.exercises03.MatrixLand"
+    mainClass = "edu.realemj.exercises10.Tribble"
     mainModule = "exercises03mod"
 }
 

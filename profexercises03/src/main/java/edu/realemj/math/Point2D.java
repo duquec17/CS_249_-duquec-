@@ -1,4 +1,4 @@
-package edu.realemj.exercises03;
+package edu.realemj.math;
 
 public class Point2D {
     private double x;
@@ -9,6 +9,11 @@ public class Point2D {
     public Point2D(double x, double y) {
         this.x = x;
         this.y = y;
+    }
+
+    public Point2D(Point2D other) {
+        this.x = other.x;
+        this.y = other.y;
     }
 
     public double getX() { return x; }
