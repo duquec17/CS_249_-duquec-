@@ -19,13 +19,13 @@ test {
 
 application {
     mainClass = "edu.realemj.exercises10.Tribble"
-    mainModule = "exercises03mod"
+    mainModule = "exercisesmod"
 }
 
 task runApp(type: JavaExec, dependsOn: build) {
     classpath = sourceSets.main.runtimeClasspath
     jvmArgs = ['--module-path', classpath.asPath]
-    mainModule = "exercises03mod"
+    mainModule = "exercisesmod"
     group "application"
     standardInput = System.in
 }
