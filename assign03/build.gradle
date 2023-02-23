@@ -1,0 +1,31 @@
+plugins {   
+    id 'application'   
+}
+
+version = '1.0'
+
+repositories {  
+    mavenCentral()    
+}
+
+dependencies {
+    testImplementation(testFixtures(project(":coretest")))
+    testImplementation 'org.testng:testng:7.7.0'
+}
+
+test {
+    useTestNG()
+}
+
+application {
+    mainClass = "edu.realemj.assign03.LetterPrinter"
+    mainModule = "assign03mod"
+}
+
+task runApp(type: JavaExec, dependsOn: build) {
+    classpath = sourceSets.main.runtimeClasspath
+    jvmArgs = ['--module-path', classpath.asPath]
+    mainModule = "assign03mod"
+    group "application"
+    standardInput = System.in
+}
