@@ -1,0 +1,14 @@
+package edu.duquec.exercises03;
+
+public class MatrixLand {
+    public static void main (String [] args){
+        Matrix2D m = Matrix2D.makeTranslate2D(2,4);
+
+        Point2D p = new Point2D(3,14);
+
+        Point2D q = m.multiply(p);
+
+        System.out.println("P = " + p);
+        System.out.println("Q = " + q);
+    }
+}
