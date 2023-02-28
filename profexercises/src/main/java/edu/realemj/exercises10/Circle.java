@@ -6,10 +6,14 @@ public class Circle {
     private double radius = 1.0;
     private Point2D center = new Point2D(0,0);
 
-    public Circle() {}
+    public Circle() {
+        // Heading off to another constructor
+        this(1.0, new Point2D(0,0));
+    }
 
     public Circle(double radius) {
-        setRadius(radius);
+        this(radius, new Point2D(0,0));
+        //setRadius(radius);
     }
 
     public Circle(double radius, Point2D center) {
