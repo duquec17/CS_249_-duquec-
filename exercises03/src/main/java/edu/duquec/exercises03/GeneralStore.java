@@ -1,7 +1,5 @@
 package edu.duquec.exercises03;
 
-import java.util.*;
-
 import java.util.Scanner;
 
 public class GeneralStore {

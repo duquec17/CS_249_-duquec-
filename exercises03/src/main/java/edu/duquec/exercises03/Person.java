@@ -8,7 +8,7 @@ public class Person {
         name = n;
     }
 
-    public  String getName(){
+    public String getName(){
         return name;
     }
     public void setName(String n){
