@@ -11,7 +11,7 @@ public class LetterPrinter {
         String name = input.nextLine();
 
         // Asks user for the boundary character input
-        System.out.println("Your new boundary character:");
+        System.out.println("Enter boundary character:");
 
         // Records next user input into string & splits
         String boundary = input.nextLine();
@@ -21,10 +21,10 @@ public class LetterPrinter {
         String [] sloganLines = new String[4];
 
         // Asks for user slogan inputs
-        System.out.println("Enter slogan (Max 4 lines):");
+        System.out.println("Enter slogan (max 4 lines):");
 
         // Fills sloganLines array with inputs
-        for(int i = 0; i < 4; i++){
+        for(int i = 0; i < 4; ++i){
             sloganLines[i] = input.nextLine();
         }
 

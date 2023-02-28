@@ -54,7 +54,7 @@ public class Letterhead {
 
     // Stores slogan lines by detecting if there is a null or not
     public void setSlogan(String [] sloganLines){
-        for(int i = 0; i <sloganLines.length; i++){
+        for(int i = 0; i <sloganLines.length; ++i){
             if(sloganLines[i] != null){
                 this.sloganLines[i] = sloganLines[i];
             }
@@ -72,7 +72,7 @@ public class Letterhead {
         int space = 0;
 
         // Places the selected bChar 40 times creating top
-        for(int i = 0; i < 40; i++){
+        for(int i = 0; i < 40; ++i){
             sb.append(boundaryChar);
         }
 
@@ -81,18 +81,18 @@ public class Letterhead {
         // Spacing procedure for text
         space = 38 - name.length();
 
-        for(int i = 0; i < space -1; i++){
+        for(int i = 0; i < space - 1; ++i){
             sb.append(" ");
         }
 
         sb.append(boundaryChar + "\n" + boundaryChar);
-        for(int i = 0; i < 38; i++){
+        for(int i = 0; i < 38; ++i){
             sb.append(" ");
         }
 
         // Places slogan lines into position (accounts for space)
-        sb.append(boundaryChar + "\n" + boundaryChar);
-        for(int i = 0; i < 4; i++){
+        sb.append(boundaryChar + "\n");
+        for(int i = 0; i < 4; ++i){
             sb.append(boundaryChar);
             if(sloganLines[i] == null){
                 sb.append("");
@@ -101,7 +101,7 @@ public class Letterhead {
                 sb.append(" " + sloganLines[i]);
                 space = 37 - sloganLines[i].length();
             }
-            for (int j = 0; j < space; j++){
+            for (int j = 0; j < space; ++j){
                 sb.append(" ");
             }
             sb.append(boundaryChar);
@@ -109,7 +109,7 @@ public class Letterhead {
         }
 
         // Generates bottom line for header
-        for(int i = 0; i < 40; i++){
+        for(int i = 0; i < 40; ++i){
             sb.append(boundaryChar);
         }
 
