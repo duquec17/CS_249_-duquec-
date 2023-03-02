@@ -1,4 +1,4 @@
-package edu.realemj.exercises03;
+package edu.realemj.math;
 
 public class MatrixLand {
     public static void main(String [] args) {

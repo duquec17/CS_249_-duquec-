@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.0.0">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>180</x>
+      <y>160</y>
+      <w>370</w>
+      <h>280</h>
+    </coordinates>
+    <panel_attributes>Circle
+-
+-radius:double
+-center:Point2D
+-
++Circle()
++Circle(radius:double)
++Circle(radius:double, center:Point2D)
++getRadius():double
++getCenter():Point2D
++setRadius(radius:double):void
++setCenter(center:Point2D):void
++toString():String</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>
