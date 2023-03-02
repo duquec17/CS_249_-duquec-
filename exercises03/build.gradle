@@ -18,7 +18,7 @@ test {
 }
 
 application {
-    mainClass = "edu.duquec.exercises10.Tribble"
+    mainClass = "edu.duquec.oregon.OregonTrail"
     mainModule = "exercises03mod"
 }
 

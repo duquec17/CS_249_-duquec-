@@ -54,7 +54,7 @@ public class Letterhead {
 
     // Stores slogan lines by detecting if there is a null or not
     public void setSlogan(String [] sloganLines){
-        for(int i = 0; i <sloganLines.length; ++i){
+        for(int i = 0; i < sloganLines.length; ++i){
             if(sloganLines[i] != null){
                 this.sloganLines[i] = sloganLines[i];
             }
