@@ -27,4 +27,12 @@ public class Shape {
     public void setCenter(Point2D center){
         this.center = new Point2D(center);
     }
+
+    public String toString(){
+        String s = "";
+        s += "SHAPE\n";
+        s += "* Center: " + center + "\n";
+        s += "* Filled?: " + filled + "\n";
+        return s;
+    }
 }

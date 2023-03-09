@@ -21,9 +21,9 @@
 +clear()
 +getRowCnt()
 +getColCnt()
-+isValidPosition()
-+getPos()
-+setPos(row:int i. colCnt, row:int)
++isValidPosition(row:int, col:int)
++getPos(row:int, col:int)
++setPos(row:int, colt:int, c:char)
 +toString()
 +getMapString()</panel_attributes>
     <additional_attributes/>
