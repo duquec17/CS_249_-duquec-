@@ -1,4 +1,4 @@
-package edu.realemj.assign04;
+package edu.duquec.assign04;
 import org.testng.Assert;
 import org.testng.annotations.*;
 
@@ -90,10 +90,10 @@ public class Test_CharBoard {
     @Test()
     public void test_toString() {
         CharBoard m = new CharBoard(5, 10, 'a');
-        Assert.assertEquals(m.toString(), "5 x 10 CharBoard (default: a)");
+        Assert.assertEquals(m.toString(), "5 x 10 edu.duquec.assign04.CharBoard (default: a)");
 
         m = new CharBoard(7, 8, '@');
-        Assert.assertEquals(m.toString(), "7 x 8 CharBoard (default: @)");
+        Assert.assertEquals(m.toString(), "7 x 8 edu.duquec.assign04.CharBoard (default: @)");
     }
         
     @Test()
