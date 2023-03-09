@@ -18,7 +18,7 @@ test {
 }
 
 application {
-    mainClass = "edu.realemj.oregon.OregonTrail"
+    mainClass = "edu.realemj.exercises12.ShapeLand"
     mainModule = "exercisesmod"
 }
 
