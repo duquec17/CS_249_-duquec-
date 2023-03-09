@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.0.0">
+  <help_text/>
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>240</x>
+      <y>210</y>
+      <w>310</w>
+      <h>240</h>
+    </coordinates>
+    <panel_attributes>CharBoard
+--
+-data:rowCnt int 
+-data:colCnt int 
+-data:fillChar char 
+-data:char[][] arrayChar
+--
++CharBoard(rowCnt:int, colCnt:int, fillchar:char)
++clear()
++getRowCnt()
++getColCnt()
++isValidPosition()
++getPos()
++setPos(row:int i. colCnt, row:int)
++toString()
++getMapString()</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>

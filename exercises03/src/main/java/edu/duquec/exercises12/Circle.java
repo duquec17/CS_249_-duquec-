@@ -7,6 +7,10 @@ public class Circle {
     private Point2D center = new Point2D(0,0);
 
     public Circle(){}
+    public Circle(double radius, Point2D center, boolean filled){
+        super(center, filled);
+        setRadius(radius);
+    }
     public Circle(double radius){
         setRadius(radius);
     }
@@ -14,6 +18,12 @@ public class Circle {
     public Circle(double radius, Point2D center){
         setRadius(radius);
         setCenter(center);
+    }
+
+    public Circle(double radius, Point2D center, boolean filled){
+        setRadius(radius);
+        setCenter(center);
+        setFilled(filled);
     }
 
     public double getRadius(){return radius;}
@@ -27,4 +37,6 @@ public class Circle {
     public void setCenter(Point2D center){
         this.center = new Point2D(center);
     }
+
+
 }
