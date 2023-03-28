@@ -24,5 +24,8 @@ public class Wasteland {
         town[0] = new NPC();
         town[1] = new NPC();
         town[2] = new NPC();
+
+
+
     }
 }
