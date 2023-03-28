@@ -43,4 +43,18 @@ public class Circle extends Shape {
         s += "* Radius: " + radius + "\n";
         return s;
     }
+
+    @Override
+    public boolean equals(Object other) {
+        if(other instanceof Circle oc) {
+            double diff = Math.abs(radius - oc.radius);
+            final double EPS = 1e-8;
+
+            if(diff <= EPS) {
+                return true;
+            }
+        }
+
+        return false;
+    }
 }
