@@ -34,4 +34,17 @@ public class Shape {
         s += "* Filled?: " + filled + "\n";
         return s;
     }
+
+    @Override
+    public boolean equals(Object other) {
+        if(other instanceof Shape so) {
+            if( filled == so.filled &&
+                center.equals(so.center)) {
+
+                return true;
+            }
+        }
+
+        return false;
+    }
 }

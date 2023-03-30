@@ -50,7 +50,7 @@ public class Circle extends Shape {
             double diff = Math.abs(radius - oc.radius);
             final double EPS = 1e-8;
 
-            if(diff <= EPS) {
+            if(diff <= EPS && super.equals(oc)) {
                 return true;
             }
         }
