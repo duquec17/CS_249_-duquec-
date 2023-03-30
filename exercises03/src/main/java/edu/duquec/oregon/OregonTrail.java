@@ -1,5 +1,5 @@
 package edu.duquec.oregon;
-
+import edu.duquec.util.SystemInputSingleton;
 import edu.duquec.exercises11.WagonPace;
 import java.util.*;
 
@@ -35,11 +35,12 @@ public class OregonTrail {
         boolean found = false;
         WagonPace pace = WagonPace.NORMAL;
         do {
-           System.out.println("enter wagon pace:");
+           System.out.println("Enter wagon pace:");
            for (WagonPace p : WagonPace.values()) {
                System.out.println("* " + p);
            }
-           String paceString = input.nextLine();
+
+           String paceString = SystemInputSingleton.getInstance().getScanner().nextLine();
            paceString = paceString.trim().toUpperCase();
 
            for (WagonPace p : WagonPace.values()) {
