@@ -44,4 +44,20 @@ public class Point2D {
         return "(" + x + "," + y + ")";
     }
 
+    private static boolean sameValue(double a, double b) {
+        double diff = Math.abs(a-b);
+        final double EPS = 1e-8;
+        return (diff <= EPS);
+    }
+
+    @Override
+    public boolean equals(Object other) {
+        if(other instanceof Point2D po) {
+            if(sameValue(x, po.x) && sameValue(y, po.y)) {
+                return true;
+            }
+        }
+
+            return false;
+    }
 }

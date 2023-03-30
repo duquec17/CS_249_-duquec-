@@ -1,5 +1,6 @@
 package edu.duquec.exercises12;
 
+import java.util.*;
 import edu.duquec.math.*;
 public class ShapeLand {
     public static void main(String [] args) {
@@ -30,5 +31,49 @@ public class ShapeLand {
         for(Shape myShape: allShapes) {
             System.out.println(myShape);
         }
+
+        double radius = -1.0;
+        Scanner input = new Scanner(System.in);
+
+        //You can remove the word Circle in new ArrayList, but not the arrows
+        ArrayList<Circle> allCircles = new ArrayList<Circle>();
+        do {
+            System.out.println("Enter radius (negative for stop):");
+            radius = input.nextDouble();
+            if(radius >= 0.0){
+                Circle oneCircle = new Circle(radius);
+                allCircles.add(oneCircle);
+            }
+        }while(radius >= 0.0);
+
+        System.out.println("Number of circles: " + allCircles.size());
+
+        if(allCircles.size() >= 3){
+            Circle aCircle = allCircles.get(2);
+            aCircle.setRadius(100);
+            aCircle = new Circle(5000); //This does nothing
+        }
+
+        if(allCircles.size() >= 1){
+            allCircles.set(0, new Circle(9001));
+        }
+
+        Circle anotherCircle = new Circle(9001);
+        System.out.println();
+
+        if(allCircles.size() >= 1){
+            Circle oldOne = allCircles.remove(0);
+            System.out.println("Removed: " + oldOne.getRadius());
+        }
+
+        System.out.println("ALL CIRCLES:");
+        System.out.println("Number of circles now: " + allCircles.size());
+        for(Circle oneCircle: allCircles){
+            System.out.println("* " + oneCircle.getRadius());
+        }
+
+        allCircles.clear();
+
+        System.out.println("Number of circles now: " + allCircles.size());
     }
 }
