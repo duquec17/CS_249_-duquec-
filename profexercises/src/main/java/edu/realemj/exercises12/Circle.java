@@ -1,6 +1,8 @@
 package edu.realemj.exercises12;
 
 import edu.realemj.math.*;
+import edu.realemj.exercises13.*;
+
 public class Circle extends Shape {
     private double radius = 1.0;
 
@@ -8,17 +10,19 @@ public class Circle extends Shape {
         // super();
     }
 
-    public Circle(double radius) {
+    public Circle(double radius) throws InvalidRadiusException {
         // super();
         setRadius(radius);
     }
 
-    public Circle(double radius, Point2D center) {
+    public Circle(double radius, Point2D center) throws InvalidRadiusException {
         this(radius);
         setCenter(center);
     }
 
-    public Circle(double radius, Point2D center, boolean filled) {
+    public Circle(double radius, Point2D center, boolean filled)
+            throws InvalidRadiusException {
+
         super(center, filled);
         setRadius(radius);
         //setCenter(center);
@@ -30,9 +34,12 @@ public class Circle extends Shape {
         return radius;
     }
 
-    public void setRadius(double radius) {
+    public void setRadius(double radius) throws InvalidRadiusException {
         if(radius >= 0) {
             this.radius = radius;
+        }
+        else {
+            throw new InvalidRadiusException("Negative radius! " + radius);
         }
     }
 
