@@ -1,12 +1,13 @@
 package edu.realemj.oregon;
 
 import edu.realemj.exercises11.WagonPace;
+import edu.realemj.util.SystemInputSingleton;
 import java.util.*;
 
 public class OregonTrail {
     public static void main(String [] args) {
         System.out.println("Welcome to the Oregon Trail!");
-        Scanner input = new Scanner(System.in);
+        //Scanner input = new Scanner(System.in);
 
         double milesToGo = 140;
 
@@ -16,7 +17,7 @@ public class OregonTrail {
 
         while(milesToGo > 0) {
 
-            pace = setWagonPace(input);
+            pace = setWagonPace(); //input);
 
             milesToGo -= pace.getSpeed();
             daysTraveled++;
@@ -29,15 +30,16 @@ public class OregonTrail {
         System.out.println("You traveled for " + daysTraveled + " days.");
     }
 
-    public static WagonPace setWagonPace(Scanner input) {
+    public static WagonPace setWagonPace() { //Scanner input) {
         boolean found = false;
         WagonPace pace = WagonPace.NORMAL;
+
         do {
             System.out.println("Enter wagon pace:");
             for (WagonPace p : WagonPace.values()) {
                 System.out.println("* " + p);
             }
-            String paceString = input.nextLine();
+            String paceString = SystemInputSingleton.getInstance().getScanner().nextLine();
             paceString = paceString.trim().toUpperCase();
 
             for (WagonPace p : WagonPace.values()) {
