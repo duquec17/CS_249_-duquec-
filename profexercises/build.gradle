@@ -18,7 +18,7 @@ test {
 }
 
 application {
-    mainClass = "edu.realemj.exercises13.ExceptionLand"
+    mainClass = "edu.realemj.exercises13.OBJModel"
     mainModule = "exercisesmod"
 }
 
