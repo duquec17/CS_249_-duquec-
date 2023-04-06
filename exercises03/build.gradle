@@ -18,7 +18,7 @@ test {
 }
 
 application {
-    mainClass = "edu.duquec.exercises12.ShapeLand"
+    mainClass = "edu.duquec.exercises13.ExceptionLand"
     mainModule = "exercises03mod"
 }
 
