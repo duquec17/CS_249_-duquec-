@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.0.0">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>20</x>
+      <y>30</y>
+      <w>360</w>
+      <h>330</h>
+    </coordinates>
+    <panel_attributes>/Shape/
+--
+-filled:boolean
+-center:Point2D
+--
+#Shape()
+#Shape(center:Point2D)
+#Shape(center:Point2D, filled:boolean)
++isFilled():boolean
++setFilled(f:boolean):void
++getCenter():Point2D
++setCenter(center:Point2D):void
++toString():String
++equals(other:Object):boolean
+/+getArea():double/
+/+getPerimeter():double/</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>
