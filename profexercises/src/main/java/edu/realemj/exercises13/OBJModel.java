@@ -59,4 +59,25 @@ public class OBJModel {
             }
         }
     }
+
+    public void scale(double sx, double sy, double sz) {
+        for(int i = 0; i < vertices.size(); i++) {
+            Point3D v = vertices.get(i);
+            v.setX(v.getX()*sx);
+            v.setY(v.getY()*sy);
+            v.setZ(v.getZ()*sz);
+        }
+    }
+
+    public static void main(String [] args) {
+        try {
+            OBJModel model = new OBJModel();
+            model.load("bunny.obj");
+            model.scale(1.0, 2.0, 1.0);
+            model.save("tallbunny.obj");
+        }
+        catch(IOException e) {
+            System.err.println(e.getMessage());
+        }
+    }
 }
