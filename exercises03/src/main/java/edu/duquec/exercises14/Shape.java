@@ -1,17 +1,17 @@
 package edu.duquec.exercises14;
 
 import edu.duquec.math.Point2D;
-public class Shape {
+public abstract class Shape {
     private boolean filled;
     private Point2D center = new Point2D(0,0);
 
-    public Shape() {}
+    protected Shape() {}
 
-    public Shape(Point2D center) {
+    protected Shape(Point2D center) {
         this.center = new Point2D(center);
     }
 
-    public Shape(Point2D center, boolean filled) {
+    protected Shape(Point2D center, boolean filled) {
         this(center);
         this.filled = filled;
     }
@@ -35,10 +35,11 @@ public class Shape {
         return s;
     }
 
-    public boolean equals(Object other){
-        if(other instanceof Shape so){
-            if(filled == so.filled &&
-            center.equals(so.center)){
+    @Override
+    public boolean equals(Object other) {
+        if(other instanceof Shape so) {
+            if( filled == so.filled &&
+                center.equals(so.center)) {
 
                 return true;
             }
@@ -46,4 +47,7 @@ public class Shape {
 
         return false;
     }
+
+    public abstract double getArea();
+    public abstract double getPerimeter();
 }

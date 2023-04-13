@@ -1,6 +1,13 @@
 package edu.duquec.exercises14;
 
-public class Ellipsoid extends Shape {
-    public abstract Rectangle
+import edu.duquec.math.Point2D;
+
+public abstract class Ellipsoid extends Shape {
+
+    protected Ellipsoid() {}
+
+    protected Ellipsoid(Point2D center, boolean filled) {
+        super(center, filled);
     }
+    public abstract Rectangle getBoundingBox();
 }

@@ -1,7 +1,7 @@
 package edu.duquec.assign05;
 
 public class Giant {
-    //Variables
+    //Variable
     private String name;
 
     //Giant Constructor
