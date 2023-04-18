@@ -1,5 +1,5 @@
-package edu.realemj.assign06;
-import edu.realemj.assign04.CharBoard;
+package edu.duquec.assign06;
+import edu.duquec.assign04.CharBoard;
 //NOTE: CHANGE realemj to YOUR SITNETID!!!
 import org.testng.annotations.Test;
 

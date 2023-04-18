@@ -1,4 +1,4 @@
-package edu.realemj.assign06;
+package edu.duquec.assign06;
 //NOTE: CHANGE realemj to YOUR SITNETID!!!
 import org.testng.Assert;
 import org.testng.annotations.Test;
