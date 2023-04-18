@@ -18,7 +18,7 @@ test {
 }
 
 application {
-    mainClass = "edu.realemj.exercises13.OBJModel"
+    mainClass = "edu.realemj.exercises15.decorator.CentralPerk"
     mainModule = "exercisesmod"
 }
 
