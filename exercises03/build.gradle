@@ -18,7 +18,7 @@ test {
 }
 
 application {
-    mainClass = "edu.duquec.exercises13.ExceptionLand"
+    mainClass = "edu.duquec.exercises15.observer.GothamCity"
     mainModule = "exercises03mod"
 }
 

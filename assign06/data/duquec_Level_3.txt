@@ -14,6 +14,6 @@ MAP:
 
 CREATURES:
 INVENTORY:
-CUP with value 5
-TOME_OF_MAGIC with value 120, enhances sorcery
-FORK with value 7
+* CUP with value 5
+* TOME_OF_MAGIC with value 120, enhances sorcery
+* FORK with value 7

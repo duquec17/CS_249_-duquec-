@@ -66,7 +66,7 @@ public class GameState implements Loadable{
         for(int i = 0; i < loadables.size(); ++i) {
             //Add any Creatures to the String
             if(loadables.get(i) instanceof Creature c) {
-                sb.append(c + "\n");
+                sb.append("* " + c + "\n");
             }
         }
 
@@ -75,7 +75,7 @@ public class GameState implements Loadable{
         for(int i = 0; i < loadables.size(); ++i) {
             if(loadables.get(i) instanceof Item x) {
                 //Add an items to the string
-                sb.append(x + "\n");
+                sb.append("* " + x + "\n");
             }
         }
 

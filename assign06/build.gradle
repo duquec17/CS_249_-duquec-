@@ -20,7 +20,7 @@ test {
 }
 
 application {
-    mainClass = "edu.realemj.assign06.KingsField"
+    mainClass = "edu.duquec.assign06.KingsField"
     mainModule = "assign06mod"
 }
 

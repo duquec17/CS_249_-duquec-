@@ -13,6 +13,6 @@ MAP:
 ..............................
 
 CREATURES:
-Skeleton at 3,2
-Rat at 6,12
+* Skeleton at 3,2
+* Rat at 6,12
 INVENTORY:

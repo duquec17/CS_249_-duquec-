@@ -13,5 +13,5 @@ MAP:
 ..............................
 
 CREATURES:
-Rat at 10,12
+* Rat at 10,12
 INVENTORY:

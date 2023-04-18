@@ -13,8 +13,8 @@ MAP:
 ..............................
 
 CREATURES:
-Skeleton at 4,2
-Rat at 7,15
-Rat at 9,3
-Skeleton at 10,4
+* Skeleton at 4,2
+* Rat at 7,15
+* Rat at 9,3
+* Skeleton at 10,4
 INVENTORY:
