@@ -9,6 +9,8 @@ repositories {
 }
 
 dependencies {
+    implementation(project(":assign04"))
+    testImplementation(project(":assign04"))
     testImplementation(testFixtures(project(":coretest")))
     testImplementation 'org.testng:testng:7.7.0'
 }
@@ -18,15 +20,21 @@ test {
 }
 
 application {
-    mainClass = "edu.duquec.exercises15.observer.GothamCity"
-    mainModule = "exercises03mod"
+    mainClass = "edu.duquec.assign06.KingsField"
+    mainModule = "assign06mod"
 }
 
 task runApp(type: JavaExec, dependsOn: build) {
     classpath = sourceSets.main.runtimeClasspath
     jvmArgs = ['--module-path', classpath.asPath]
-    mainModule = "exercises03mod"
+    mainModule = "assign06mod"
     group "application"
     standardInput = System.in
 }
+
+applicationDistribution.from('data') {
+    into 'bin/data'
+}
+
+
 
