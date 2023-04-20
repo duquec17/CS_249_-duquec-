@@ -10,6 +10,7 @@ include ':assign03'
 include ':assign04'
 include ':assign05'
 include ':assign06'
+include ':assign07'
 
 include ':profexercises02'
 include ':profexercises'
