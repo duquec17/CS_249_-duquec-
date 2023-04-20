@@ -1,0 +1,39 @@
+plugins {   
+    id 'application'   
+}
+
+version = '1.0'
+
+repositories {  
+    mavenCentral()    
+}
+
+dependencies {
+    implementation(project(":assign04"))
+    implementation(project(":assign06"))
+    testImplementation(project(":assign04"))
+    testImplementation(project(":assign06"))
+    testImplementation(testFixtures(project(":coretest")))
+    testImplementation 'org.testng:testng:7.7.0'
+}
+
+test {
+    useTestNG()
+}
+
+application {
+    mainClass = "edu.realemj.assign07.Thunderdome"
+    mainModule = "assign07mod"
+}
+
+task runApp(type: JavaExec, dependsOn: build) {
+    classpath = sourceSets.main.runtimeClasspath
+    jvmArgs = ['--module-path', classpath.asPath]
+    mainModule = "assign07mod"
+    group "application"
+    standardInput = System.in
+}
+
+
+
+
