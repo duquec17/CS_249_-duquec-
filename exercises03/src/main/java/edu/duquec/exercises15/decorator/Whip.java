@@ -1,6 +1,6 @@
 package edu.duquec.exercises15.decorator;
 
-public class Whip extends Condiment{
+public class Whip extends Condiment {
     private Beverage inside;
 
     public Whip(Beverage b) {
@@ -14,6 +14,4 @@ public class Whip extends Condiment{
     public String getDescription() {
         return inside.getDescription() + ", whip";
     }
-
-
 }

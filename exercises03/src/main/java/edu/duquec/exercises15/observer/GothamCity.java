@@ -8,16 +8,16 @@ public class GothamCity {
         Batperson tim = new Batperson("Robin");
 
         Batsignal signal = new Batsignal();
-        PoliceRadio radio = new PoliceRadio;
+        PoliceRadio radio = new PoliceRadio();
 
-        signal.reigsterObserver(bruce);
-        signal.reigsterObserver(dick);
-        signal.reigsterObserver(barb);
-        signal.reigsterObserver(tim);
+        signal.registerObserver(bruce);
+        signal.registerObserver(dick);
+        signal.registerObserver(barb);
+        signal.registerObserver(tim);
 
         radio.registerObserver(barb);
 
-        signal.setActiveCrime("a robber");
+        signal.setActiveCrime("a robbery");
 
         signal.removeObserver(dick);
 

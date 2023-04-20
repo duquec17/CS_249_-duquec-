@@ -8,9 +8,11 @@ public abstract class Beverage {
     protected Beverage(String desc) {
         this.desc = desc;
     }
-    protected String getDescription() {
+
+    public String getDescription() {
         return desc;
     }
 
     public abstract double cost();
+
 }

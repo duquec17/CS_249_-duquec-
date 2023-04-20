@@ -1,6 +1,6 @@
 package edu.duquec.exercises15.decorator;
 
-public class Mocha {
+public class Mocha extends Condiment {
     private Beverage inside;
 
     public Mocha(Beverage b) {
@@ -14,5 +14,4 @@ public class Mocha {
     public String getDescription() {
         return inside.getDescription() + ", mocha";
     }
-
 }

@@ -1,8 +1,10 @@
 package edu.duquec.exercises15.observer;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Observer;
+
 public class Batsignal implements Subject {
-    private ArrayList<Observer> allObs = new ArrayList<>();
+    private ArrayList<java.util.Observer> allObs = new ArrayList<>();
     private String activeCrime = "nothing";
 
     public String getActiveCrime() {
@@ -14,11 +16,11 @@ public class Batsignal implements Subject {
         notifyObservers();
     }
 
-    public void registerObserver(Observer obs) {
+    public void registerObserver(java.util.Observer obs) {
         allObs.add(obs);
     }
 
-    public void removeObserver(Observer obs) {
+    public void removeObserver(java.util.Observer obs) {
         allObs.remove(obs);
     }
 
@@ -27,5 +29,4 @@ public class Batsignal implements Subject {
             obs.update(this);
         }
     }
-
 }
