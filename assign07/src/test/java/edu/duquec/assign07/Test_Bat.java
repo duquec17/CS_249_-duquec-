@@ -1,9 +1,9 @@
-package edu.realemj.assign07;
+package edu.duquec.assign07;
 
-import edu.realemj.assign04.CharBoard;
-import edu.realemj.assign06.Creature;
-import edu.realemj.assign06.GameFileException;
-import edu.realemj.assign06.Rat;
+import edu.duquec.assign04.CharBoard;
+import edu.duquec.assign06.Creature;
+import edu.duquec.assign06.GameFileException;
+import edu.duquec.assign06.Rat;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;

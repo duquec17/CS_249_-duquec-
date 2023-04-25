@@ -17,7 +17,7 @@ public class Rat extends Creature {
         return "Rat at " + super.getRow() + "," +super.getCol();
     }
 
-    //
+    //Displays Rat location
     public void draw(CharBoard map) {
         map.setPos(super.getRow(), super.getCol(), 'R');
     }

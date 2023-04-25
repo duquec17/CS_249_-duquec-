@@ -1,6 +1,6 @@
-package edu.realemj.assign07;
+package edu.duquec.assign07;
 
-import edu.realemj.assign06.*;
+import edu.duquec.assign06.*;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import org.testng.Assert;
