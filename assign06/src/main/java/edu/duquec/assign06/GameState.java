@@ -6,8 +6,8 @@ import java.util.*;
 
 public class GameState implements Loadable{
     //Variable list
-    ArrayList<Loadable> loadables = new ArrayList<>();
-    CharBoard map = new CharBoard(12,30, '.');
+    private ArrayList<Loadable> loadables = new ArrayList<>();
+    private CharBoard map = new CharBoard(12,30, '.');
     private int lines = 0;
     private String typeName;
 
