@@ -25,6 +25,8 @@ public class Bat extends Creature implements Mover {
     }
 
     //Moves bats away from player
+    // NOTE: For this and Orc, I would make the AvoidPlayer/SeekPlayer a instance variable
+    // instead of re-creating it each time.
     public void performMove(Player p) {
         new AvoidPlayer().move(this,p);
     }
